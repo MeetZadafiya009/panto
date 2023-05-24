@@ -1,0 +1,61 @@
+@import './../../assets/scss/App.scss';
+.menu{
+    li{
+        display: inline-block;
+        margin-left:3rem;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.cart-number{
+    margin-left: -10px;
+}
+.appnav{
+  
+    .app-link{
+        @include lg{
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            
+        }
+        @include lg{
+            color: black !important;
+        }
+        color: white !important;
+        margin-left: 65px;
+        a{
+            color: white !important;
+            @include lg{
+                color: black !important;
+            }
+        }
+    }
+  
+}
+.cart-wrapper{
+    @include lg{
+        display: none !important; 
+    }
+}
+.nav-collapse{
+    @include lg{
+        margin-top: 1.5rem;
+        width: 100%;
+        padding:5rem 0 ;
+        background-color: rgb(228, 221, 221);
+        z-index: 10;
+        border-radius: 10px;
+    }
+}
+.custom-toggle {
+    background-color: white; 
+    border-color: white; 
+    color: black; 
+  }
+  .custom-toggle:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+  }

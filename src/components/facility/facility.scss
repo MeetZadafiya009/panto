@@ -1,0 +1,12 @@
+@import './../../assets/scss/App.scss';
+.facility{
+    .facility-title{
+        @include lg{
+            @include flex-center;
+            padding-bottom: 1.5rem;
+            h2{
+                font-size: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.flex-end{
+    @include flex-end;
+}
+.flex-center{
+    @include flex-center;
+}
+.flex-start{
+    @include flex-start;
+}
+.flex-around{
+    @include flex-around;
+}
+.text-orange{
+    color: $orange;
+}
+.text-justify{
+    text-align: justify;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.flex-between{
+    @include flex-between;
+}
+.align-end{
+    @include align-end;
+}
+.end{
+    @include end;
+}
+.gilroy-bold{
+    font-family: 'Gilroy-Bold';
+}
+.gilroy-heavy{
+    font-family: 'Gilroy-Heavy';
+}
+.gilroy-light{
+    font-family: 'Gilroy-Light';
+}
+.gilroy-medium{
+    font-family: 'Gilroy-Medium';
+}
+.gilroy-regular{
+    font-family: 'Gilroy-Regular';
+}
+.inter{
+    font-family: 'Inter';
+}

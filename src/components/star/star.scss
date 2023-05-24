@@ -1,0 +1,14 @@
+@import './../../assets/scss/App.scss';
+.star-wrapper{
+    img{
+        margin-left:5px;
+    }
+}
+.riview-wrapper{
+    .review{
+        display: flex;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
