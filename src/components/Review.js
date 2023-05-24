@@ -1,6 +1,5 @@
-import './star.scss';
-import star from './../../assets/images/__star.png';
-import light from './../../assets/images/light.png';
+import star from './../assets/images/__star.png';
+import light from './../assets/images/light.png';
 const Review=()=>{
     return (
         <>

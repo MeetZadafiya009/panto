@@ -2,7 +2,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import instagram from './../../assets/images/instagram.png';
 import facebook from './../../assets/images/facebook.png';
 import twitter from './../../assets/images/twitter.png';
-import './footer.scss';
 const Footer=()=>{
     return (
         <>
@@ -18,25 +17,25 @@ const Footer=()=>{
                         <Col md={3} sm={6} xs={12} className='flex-center'>
                             <ul className='footer-menu text-centerr'>
                                 <li className='text-orange'>Services</li>
-                                <li>Email Marketing</li>
-                                <li>Campaigns</li>
-                                <li>Branding</li>
+                                <li><a href='#'>Email Marketing</a></li>
+                                <li><a href="#">Campaigns</a></li>
+                                <li><a href="#">Branding</a></li>
                             </ul>
                         </Col>
                         <Col md={3} sm={6} xs={12} className='menu-3 flex-center'>
                             <ul className='footer-menu footer-menu-3 text-centerr'>
                                 <li className='text-orange'>Furniture</li>
-                                <li>Beds</li>
-                                <li>Chair</li>
-                                <li>All</li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Chair</a></li>
+                                <li><a href="#">All</a></li>
                             </ul>
                         </Col>
                         <Col md={3} sm={6} xs={12} className='flex-center'>
                             <ul className='footer-menu text-centerr'>
                                 <li className='text-orange'>Follow Us</li>
-                                <li className='d-flex'><img src={facebook} className='me-3 img-fluid' alt='facebook'/>Facebook</li>
-                                <li className='d-flex'><img src={twitter} className='me-3 img-fluid' alt='twitter'/>Twitter</li>
-                                <li className='d-flex'><img src={instagram} className='me-3 img-fluid' alt='facebook'/>Instagram</li>
+                                <li className=' d-flex'><img src={facebook} className='me-4 facebook img-fluid' alt='facebook'/><a href='#'>Facebook</a></li>
+                                <li className=' d-flex'><img src={twitter} className='me-3 twitter img-fluid' alt='twitter'/><a href='#'>Twitter</a></li>
+                                <li className=' d-flex'><img src={instagram} className='me-3 instagram img-fluid' alt='facebook'/><a href='#'>Instagram</a></li>
                             </ul>
                         </Col>
                     </Row>

@@ -1,0 +1,400 @@
+@import './../../assets/scss/App.scss';
+.main {
+    height: 100vh;
+    background-image: url('./../../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.hero-heading{
+    text-transform: capitalize;
+    
+    @include xl{
+        font-size: 3.3rem;
+    }
+    @include lg{
+        font-size: 2.9rem;
+    }
+    @include md{
+        font-size: 2.3rem;
+    }
+    @include sm{
+        font-size: 1.9rem;
+    }
+}
+.hero-text{
+
+    @include xl{
+        font-size: 1.5rem;
+    }
+    @include lg{
+        font-size: 1.3rem;
+    }
+    @include md{
+        margin-top: 0.4rem;
+        font-size: 1.25rem;
+    }
+    @include sm{
+        font-size:1rem;
+    }
+}
+.content {
+    .content-text {
+        font-size: 24px;
+    }
+}
+
+.search-box{
+    margin-top: 2.5rem;
+}
+
+
+
+.search-input{
+    padding: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.861538px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border-radius: 42px;
+    width: 344px;
+    height: 56px;
+    &::placeholder{
+        color: white;
+    }
+}
+
+.search {
+    transform: translateX(-50px);
+}
+
+// Facility Component Scss
+
+
+.facility{
+    .facility-title{
+        @include lg{
+            @include flex-center;
+            padding-bottom: 1.5rem;
+            h2{
+                font-size: 35px;
+            }
+        }
+        @include sm{
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+    .break{
+        @include lg{
+            display: none;
+        }
+    }
+}
+
+// Product Component Scss
+
+
+.product {
+    background-color: #F7F7F7;
+
+    .category {
+        background: #EEEEEE;
+        border-radius: 44px;
+
+        div {
+            
+            padding: 5px 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: white;
+                border-radius: 32px;
+                color: black;
+                font-family: 'Gilroy-Medium';
+            }
+        }
+
+        div.active {
+            background-color: white;
+            border-radius: 32px;
+            font-family: 'Gilroy-Medium';
+        }
+    }
+
+    .product-title {
+        word-spacing: 5px;
+        font-size: 42px !important;
+        @include lg{
+            font-size: 32px !important;
+        }
+        @include md{
+            font-size: 27px !important;
+        }
+        @include sm{
+            font-size: 25px !important;
+        }
+    }
+
+    .product-wrapper {
+        background-color: #FAFAFA;
+
+        img {
+            width: 207px;
+            height: 243px;
+            transform: translateY(-40px);
+        }
+    }
+
+    .product-card {
+        border-radius: 20px;
+
+        .currency {
+            font-size: 18px;
+        }
+    }
+
+    .card-wrapper {
+        padding: 90px 0 50px 0;
+    }
+
+    .slick-prev::before {
+        display: none;
+    }
+
+    .slick-next::before {
+        display: none;
+    }
+
+    .slick-next {
+        right: 5%;
+        top: 38%;
+        @include md{
+            right: 13% !important;
+        }
+        @include lg{
+            right: 9% !important;
+        }
+        @include sm{
+            right: 18% !important;
+        }
+        @include xsss{
+            right: 21% !important;
+        }
+        
+    }
+
+    .slick-prev {
+        left: -1%;
+        z-index: 10;
+        top: 38%;
+    }
+}
+
+// Experience Component Scss
+
+
+
+.experience {
+    padding:7rem 0;
+    .experience-img {
+        position: absolute;
+    }
+    .experience-heading{
+        letter-spacing: 1.7px;
+       
+    }
+    .experience-title{
+        text-transform: capitalize;
+        @include xxl{
+            font-size: 2rem;
+        }
+        @include sm{
+            font-size: 1.7rem;
+        }
+    }
+    .horizontal-img {
+        position: absolute;
+        z-index: -2;
+        left: 190px;
+    }
+
+    .vertical-img {
+        position: absolute;
+        z-index: -2;
+        top: -50px;
+
+    }
+    
+    .break-1{
+        display: none;
+        @include lg{
+            display: none !important;
+        }
+    }
+    .experience-text{
+        @include md{
+            padding-right: 0rem;
+        }
+    }
+
+}
+@media screen and (max-width:1587px) {
+    .break-1{
+        display: block !important;
+    }
+    .experience-text{
+        padding-right: 5rem;
+    }
+}
+
+// material scss
+
+
+
+.material{
+    .material-heading{
+        letter-spacing: 1.7px;
+    }
+    .break-2{
+        display: none;
+        @include lg{
+            display: none !important;
+        }
+    }
+    .break-3{
+        display: none;
+        @include lg{
+            display: none !important;
+        }
+    }
+    .material-title{
+        text-transform: capitalize;
+        @include xxl{
+            font-size: 2rem;
+        }
+        @include sm{
+            font-size: 1.7rem;
+        }
+    }
+}
+@media screen and (max-width:1587px) {
+    .break-2{
+        display: block !important;
+    }
+    .break-3{
+        display: block !important;
+    }
+}
+
+// Client Component Scss
+
+
+
+.client{
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    .client-1{
+        display: flex !important;
+        background-image: url('./../../assets/images/unsplash__HqHX3LBN18 (2).png');
+        height: 476px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .client-heading{
+        letter-spacing: 1.7px;
+    }
+    .client-2{
+        display: flex !important;
+        background-image: url('./../../assets/images/unsplash_JaXs8Tk5Iww (1).png');
+        height: 476px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .client-3{
+        display: flex !important;
+        background-image: url('./../../assets/images/unsplash_h2_3dL9yLpU (1).png');
+        height: 476px;
+        background-repeat: no-repeat;
+        background-position: center;
+        .client-desc{
+            padding-bottom: 1.5rem;
+        }
+    }
+    .client-details{
+        background-color: rgb(255, 255, 255);
+        border-radius: 18.1182px;
+        padding-bottom: 18px !important;
+        //margin: 0 14%;
+        width: 80%;
+        @include xxl{
+            width: 58%;
+        }
+        @include xl{
+            width: 68%;
+        }
+        @include lg{
+            width: 47%;
+        }
+        @include md{
+            width: 63%;
+        }
+        padding: 0px 30px 10px 30px;
+        .client-img-wrapper{
+            margin-top: -26px;
+            background-color: white;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+    }
+    .slick-prev{
+        @include xl{
+            left: 2%;
+        }
+        @include md{
+            left: 7%;
+        }
+        top: 25%;
+        left: 0%;
+        z-index: 10;
+    }
+    .slick-next{
+        @include xl{
+            right: 9%;
+        }
+        @include md{
+            right: 20%;
+        }
+        top: 25%;
+        right: 6%;
+    }
+    .slick-prev::before{
+        display: none;
+    }
+    .slick-next::before{
+        display: none;
+    }
+}
+
+/* review component scss */
+
+
+.star-wrapper{
+    img{
+        margin-left:5px;
+    }
+}
+.riview-wrapper{
+    .review{
+        display: flex;
+        img{
+            margin-right: 5px;
+        }
+    }
+}

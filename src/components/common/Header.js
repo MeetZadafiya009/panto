@@ -1,18 +1,17 @@
 import { Col, Container, Nav, Row } from "react-bootstrap";
-import logo from './../../assets/images/Panto.png';
-import cart from './../../assets/images/cart.png';
-import number from './../../assets/images/number.png';
-import './navbar.scss';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+
+import logo from '../../assets/images/Panto.png'
+import cart from '../../assets/images/cart.png';
+import number from '../../assets/images/number.png';
+import dropdown from '../../assets/images/full-img.png';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Appbar() {
+const Header=()=>{
   return (
     <Navbar className="position-absolute w-100 appbar" expand="lg">
       <Container className="px-5 py-3" fluid>
         <Col sm={1}>
-        <img src={logo} />
+        <img src={logo} className="img-fluid"/>
         </Col>
         <Navbar.Toggle aria-controls="navbarScroll" className="custom-toggle" />
         <Navbar.Collapse className="nav-collapse" id="navbarScroll">
@@ -22,7 +21,7 @@ function Appbar() {
             
             navbarScroll
           >
-            <Nav.Link className="app-link" href="#action1">Furniture</Nav.Link>
+            <Nav.Link style={{marginLeft:"0"}} className="flex-center app-link" href="#action1">Furniture <img src={dropdown} className="dropdown"  /></Nav.Link>
             <Nav.Link className="app-link" href="#action2">Shop</Nav.Link>
             <Nav.Link className="app-link" href="#action2">About Us</Nav.Link>
             <Nav.Link className="app-link" href="#action2">Contact</Nav.Link>
@@ -42,4 +41,4 @@ function Appbar() {
   );
 }
 
-export default Appbar;
+export default Header;

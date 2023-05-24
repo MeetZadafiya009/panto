@@ -1,14 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from 'react-slick';
-import './client.scss';
-import client1 from './../../assets/images/Ellipse 1131.png';
-import client2 from './../../assets/images/Ellipse 1131 (1).png';
-import client3 from './../../assets/images/Ellipse 1131 (2).png';
-import Review from "../star/Review";
-import prevArrow from './../../assets/images/Frame 48095401.png';
-import nextArrow from './../../assets/images/Frame 48095395 (2).png';
-import PrevArrow from "../PrevArrow";
-import NextArrow from "../NextArrow";
+import client1 from '../assets/images/Ellipse 1131.png';
+import client2 from '../assets/images/Ellipse 1131 (1).png';
+import client3 from '../assets/images/Ellipse 1131 (2).png';
+import Review from "./Review";
+import PrevArrow from "./PrevArrow";
+import NextArrow from "./NextArrow";
 const Client = () => {
     
     const settings = {
@@ -43,8 +40,8 @@ const Client = () => {
                 <Container>
                     <Row>
                         <Col sm={12}>
-                            <p className="text-center text-orange text-uppercase">Testimonials</p>
-                            <h1 className="text-center">Our Client Reviews</h1>
+                            <p className="text-center gilroy-bold client-heading text-orange text-uppercase">Testimonials</p>
+                            <h1 className="text-center gilroy-bold">Our Client Reviews</h1>
                         </Col>
                     </Row>
                     <Row className="gx-5 m-0 pt-5">
@@ -56,7 +53,7 @@ const Client = () => {
                                             <img className="img-fluid" src={client1} alt="client1" />
                                         </div>
                                     </div>
-                                    <h6 className="text-center mt-2 mb-1">Bang Upin</h6>
+                                    <h6 className="text-center gilroy-bold mt-2 mb-1">Bang Upin</h6>
                                     <p className="text-center">Pedagang Asongan</p>
                                     <p className="text-center">
                                         “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
@@ -71,7 +68,7 @@ const Client = () => {
                                             <img className="img-fluid" src={client2} alt="client1" />
                                         </div>
                                     </div>
-                                    <h6 className="text-center mt-2 mb-1">Ibuk Sukijan</h6>
+                                    <h6 className="text-center gilroy-bold mt-2 mb-1">Ibuk Sukijan</h6>
                                     <p className="text-center">Ibu Rumah Tangga</p>
                                     <p className="text-center">
                                         “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
@@ -86,7 +83,7 @@ const Client = () => {
                                             <img className="img-fluid" src={client3} alt="client1" />
                                         </div>
                                     </div>
-                                    <h6 className="text-center mt-2 mb-1">Mpok Ina</h6>
+                                    <h6 className="text-center gilroy-bold mt-2 mb-1">Mpok Ina</h6>
                                     <p className="text-center">Karyawan Swasta</p>
                                     <p className="client-desc text-center">
                                         “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
@@ -101,7 +98,7 @@ const Client = () => {
                                             <img className="img-fluid" src={client3} alt="client1" />
                                         </div>
                                     </div>
-                                    <h6 className="text-center mt-2 mb-1">Mpok Ina</h6>
+                                    <h6 className="text-center gilroy-bold mt-2 mb-1">Mpok Ina</h6>
                                     <p className="text-center">Karyawan Swasta</p>
                                     <p className="client-desc text-center">
                                         “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“

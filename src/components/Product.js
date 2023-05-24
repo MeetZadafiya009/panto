@@ -1,15 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
-import product1 from './../../assets/images/Group 3742.png';
-import product2 from './../../assets/images/Group 3742 (1).png';
-import product3 from './../../assets/images/Group 3742 (2).png';
-import product4 from './../../assets/images/Group 3742 (3).png';
-import plus from './../../assets/images/plus.png';
-import arrow from './../../assets/images/arraow.png';
-import './product.scss';
-import Star from "../star/Star";
+import product1 from '../assets/images/Group 3742.png';
+import product2 from '../assets/images/Group 3742 (1).png';
+import product3 from '../assets/images/Group 3742 (2).png';
+import product4 from '../assets/images/Group 3742 (3).png';
+import plus from '../assets/images/plus.png';
+import arrow from '../assets/images/arraow.png';
+import Star from "./Star";
 import Slider from 'react-slick';
-import PrevArrow from "../PrevArrow";
-import NextArrow from "../NextArrow";
+import PrevArrow from "./PrevArrow";
+import NextArrow from "./NextArrow";
 import { useEffect } from "react";
 const Product = () => {
     const settings = {
@@ -51,11 +50,11 @@ const Product = () => {
                 <Container className=" product-container">
                     <Row >
                         <Col sm={12}>
-                            <h2 className="fw-bolder gilroy-medium product-title text-center">Best Selling Product</h2>
+                            <h2 className="fw-bold gilroy-medium product-title text-center">Best Selling Product</h2>
                         </Col>
                     </Row>
                     <Row className="py-4 justify-content-center">
-                        <Col xxl={3} lg={4} sm={8} xs={10}>
+                        <Col xxl={3} lg={4} md={6} sm={8} xs={10}>
                             <div className="py-1 flex-around d-flex category">
                                 <div className="active">Chair</div>
                                 <div>Beds</div>
@@ -75,7 +74,7 @@ const Product = () => {
                                         <Star />
                                         <div className="pt-5 flex-between">
                                             <div>
-                                                <h4><span className="currency align-top me-1">$</span><span>392</span></h4>
+                                                <h4 className="gilroy-bold"><span className="currency align-top me-1">$</span><span>392</span></h4>
                                             </div>
                                             <div>
                                                 <img src={plus} alt='plus' />

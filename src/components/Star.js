@@ -1,5 +1,4 @@
-import star from './../../assets/images/star.png';
-import './star.scss';
+import star from './../assets/images/star.png';
 const Star=()=>{
     return(
         <>

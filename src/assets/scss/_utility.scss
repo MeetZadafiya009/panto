@@ -1,14 +1,14 @@
 .flex-end{
-    @include flex-end;
+    @include displayPosition(center,end);
 }
 .flex-center{
-    @include flex-center;
+    @include displayPosition(center,center);
 }
 .flex-start{
-    @include flex-start;
+    @include displayPosition(center,start);
 }
 .flex-around{
-    @include flex-around;
+    @include displayPosition(center,space-around);
 }
 .text-orange{
     color: $orange;
@@ -20,13 +20,13 @@
     cursor: pointer;
 }
 .flex-between{
-    @include flex-between;
+    @include displayPosition(center,space-between);
 }
 .align-end{
-    @include align-end;
+    @include displayPosition(end,center);
 }
 .end{
-    @include end;
+    @include displayPosition(end,end);
 }
 .gilroy-bold{
     font-family: 'Gilroy-Bold';
@@ -42,7 +42,4 @@
 }
 .gilroy-regular{
     font-family: 'Gilroy-Regular';
-}
-.inter{
-    font-family: 'Inter';
 }
